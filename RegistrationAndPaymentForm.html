@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Payment form</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Registration and Payment Form</h1>
+        <p><sup>*</sup>= means it is compulsary to fill</p>
+        <h2>Contact Information</h2>
+        <p>Name <sup>*</sup>: <input type="text" name="userName" required> </p>
+        <fieldset>
+            <legend>Gender<sup>*</sup></legend>
+            <p>Male <input type="radio" name="gender" required></p>
+            <p>Female <input type="radio" name="gender" required></p>
+            <p>Others <input type="radio" name="gender" required></p>
+        </fieldset>
+        <p>Address: <textarea cols="60" rows="4"></textarea></p>
+        <p>Email: <sup>*</sup><input type="email" name="email" required></p>
+        <p>Pincode: <input type="number" name="pincode"></p>
+
+        <h2>Payment Form</h2>
+        <p>Card Type: <sup>*</sup><select name="cardType" required>
+            <option>--Select an option--</option>
+            <option value="rupay">Rupay</option>
+            <option value="mastercard">Master Card</option>
+            <option value="visa">Visa</option>
+        </select></p>
+        <p>card Number: <sup>*</sup><input type="number" name="cardnumber" required>
+        </p>
+        <p>Expiry Date: <sup>*</sup><input type="date" name="cardexpiry" required></p>
+        <p>CVV: <sup>*</sup><input type="number" name="cvv" id="cvv" required></p>
+        <input type="submit" value="Pay Now">
+    </form>
+</body>
+</html>
